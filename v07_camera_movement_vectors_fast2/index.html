@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+
+  <body onload='processor.doLoad()'>
+	<a href='..'>Home</a><br />
+	This example reads the video stream from the camera and puts it into first canvas.  The first canvas is then used as the source for image processing.<br />
+	Followed by: timediff filter, horizontal edge filter, vertial edge filter.  Then movement vectors are calculated and added to the first canvas.<br /> 
+	<video id="video" width="320" height="240" autoplay style="display: none;"></video>
+    <div id="outpu"></div>
+	<pre id="frams"></pre>
+  </body>
+</html>

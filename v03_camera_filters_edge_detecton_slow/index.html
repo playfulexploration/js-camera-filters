@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+
+  <body onload='processor.doLoad()'>
+	<a href='..'>Home</a><br />
+	This example reads the video stream from the camera and puts it into left canvas.  The left canvas is then used as the source for image processing.<br />
+	The middle image shows the grayscale of the original.  The right image shows the horizontal edges from the grayscale image.<br /> 
+	<video id="video" width="320" height="240" autoplay style="display: none;"></video>
+    <div>
+		<canvas id="canv1" width="320" height="240"></canvas>
+		<canvas id="canv2" width="320" height="240"></canvas>
+		<canvas id="canv3" width="320" height="240"></canvas>
+		<pre id="frams"></pre>
+    </div>
+  </body>
+</html>
